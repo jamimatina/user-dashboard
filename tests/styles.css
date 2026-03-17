@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+  --dark-text-color: #666;
+  --light-text-color: #999;
+  --transition-duration: 0.3s;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color var(--transition-duration);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-right: 20px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color var(--transition-duration);
+}
+
+.header nav a:hover {
+  color: #ccc;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-content .title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-content .description {
+  font-size: 14px;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+}
+
+.main-content .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-content .card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  width: calc(33.33% - 20px);
+}
+
+.main-content .card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-content .card p {
+  font-size: 14px;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+}
+
+.main-content .card button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.main-content .card button:hover {
+  background-color: #ccc;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer ul li {
+  margin-right: 20px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color var(--transition-duration);
+}
+
+.footer ul li a:hover {
+  color: #ccc;
+}
